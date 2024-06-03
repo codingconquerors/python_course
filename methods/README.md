@@ -12,9 +12,10 @@ Instance methods are functions defined inside a class that operates on instances
 
 ```python
 class Dog:
-    def __init__(self, name, age):
+    def __init__(self, name, age, species):
         self.name = name
         self.age = age
+        self.species = species
 
     def bark(self):
         print(f"{self.name} is barking.")
@@ -23,11 +24,16 @@ class Dog:
         return self.age
 
 # Creating an instance of Dog
-my_dog = Dog("Rex", 5)
+my_dog = Dog("Rex", 5, "Doberman")
+
+your_dog = Dog("Romeo", 8, "Husky")
 
 # Calling instance methods
 my_dog.bark()  # Output: Rex is barking.
 print(my_dog.get_age())  # Output: 5
+
+your_dog.bark()
+your_dog.get_age()
 ```
 #### More about instance methods:
 
