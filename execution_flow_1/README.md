@@ -15,13 +15,13 @@ greet("Alice")
 
 The Python interpreter is the program that reads and executes the Python code. When you run a Python script, the interpreter processes the code in several steps:
 
-### 3. Lexical Analysis
+#### 1. Lexical Analysis
 
 The source code is broken down into tokens, which are the smallest elements like keywords, identifiers, literals, and operators.
 
 For example, the code above would be tokenized into elements like `def`, `greet`, `(`, `name`, `)`, `:`, `print`, `f"Hello, {name}"`, and so on.
 
-### 4. Parsing
+#### 2. Parsing
 
 The tokens are then parsed to form an Abstract Syntax Tree (AST). The AST represents the grammatical structure of the source code.
 
@@ -41,13 +41,13 @@ FunctionDef
                      └── value: name
 ```
 
-### 5. Bytecode Compilation
+#### 3. Bytecode Compilation
 
 The AST is then compiled into bytecode, which is a lower-level, platform-independent representation of the source code. This bytecode is stored in `.pyc` files in the `__pycache__` directory.
 
 Bytecode for the example might include instructions like loading the `print` function and the formatted string `f"Hello, {name}"`.
 
-### 6. Execution by Python Virtual Machine (PVM)
+#### 4. Execution by Python Virtual Machine (PVM)
 
 The compiled bytecode is executed by the Python Virtual Machine (PVM). The PVM is an interpreter that reads the bytecode instructions and performs the necessary operations.
 
